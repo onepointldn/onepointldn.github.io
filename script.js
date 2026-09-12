@@ -1,1 +1,0 @@
-const observer=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});document.querySelectorAll(".market,.pillars>div,.intro-grid,.contact h2").forEach(el=>observer.observe(el));
